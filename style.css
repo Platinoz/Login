@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+.main-login{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(77, 49, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    font-size: 3vh;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left-login > video{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 80px;
+}
+.left-login > h1{
+    font-size: 3vh;
+    color: rgb(0, 248, 21);
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: rgb(71, 42, 214);
+    border-radius: 20px;
+    box-shadow: 0px -10px 40px rgb(18, 51, 110);
+}
+.card-login > h1{
+    color: rgb(0, 248, 21);
+    font-weight: 800;
+    margin: 0;
+}
+.textfield{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 1px 3px rgb(0, 248, 21);
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield > label{
+    color: antiquewhite;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder{
+    color: white;
+}
+.btn-login{
+    width: 30%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: chartreuse;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(123, 255, 0);
+}
+@media only screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50%;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
